@@ -1,0 +1,6 @@
+.env
+posted_items.json
+__pycache__/
+*.pyc
+.python-version
+.idea
