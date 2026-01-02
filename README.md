@@ -1,6 +1,6 @@
 # Albo Pretorio Arco
 
-This repository contains a script that scrapes albo pretorio items from the Arco municipality [transparency portal](https://arco.trasparenza-valutazione-merito.it/web/trasparenza/dettaglio-albo-pretorio?p_p_id=jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_count=1&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page-parent=0&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page=14598) and posts new items to a Telegram channel, [https://t.me/ComuneArcoAlbo](https://t.me/ComuneArcoAlbo).
+This repository contains a script that scrapes albo pretorio items from the Arco municipality [transparency portal](https://arco.trasparenza-valutazione-merito.it/web/trasparenza/dettaglio-albo-pretorio?p_p_id=jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_count=1&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page-parent=0&_jcitygovmenutrasversaleleftcolumn_WAR_jcitygovalbiportlet_current-page=14598) and posts new items to a Telegram channel, [@ComuneArcoAlbo](https://t.me/ComuneArcoAlbo).
 
 ## Setup
 
