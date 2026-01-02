@@ -12,6 +12,14 @@ uv sync
 
 Create `.env` file with your Telegram credentials, starting from `.env.example`:
 
+```bash
+BOT_TOKEN=your_bot_token_here
+CHANNEL_ID=your_channel_id_or_@name_here
+
+# Optional: where to store posted_items.json (defaults to current directory)
+DATA_DIR=/path/to/data
+```
+
 Run the project with:
 
 ```bash

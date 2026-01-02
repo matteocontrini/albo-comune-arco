@@ -8,15 +8,24 @@ from bs4 import BeautifulSoup
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup
 
 
+def get_data_file_path():
+    data_dir = os.getenv('DATA_DIR', '.')
+    return os.path.join(data_dir, 'posted_items.json')
+
+
 def load_posted_ids():
-    if os.path.exists('posted_items.json'):
-        with open('posted_items.json') as f:
+    file_path = get_data_file_path()
+    if os.path.exists(file_path):
+        with open(file_path) as f:
             return set(json.load(f))
     return set()
 
 
 def save_posted_ids(posted_ids):
-    with open('posted_items.json', 'w') as f:
+    file_path = get_data_file_path()
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(file_path) or '.', exist_ok=True)
+    with open(file_path, 'w') as f:
         json.dump(sorted(list(posted_ids)), f, indent=2)
 
 
@@ -135,7 +144,7 @@ def main():
         return 1
 
     # Check if this is the first run
-    is_first_run = not os.path.exists('posted_items.json')
+    is_first_run = not os.path.exists(get_data_file_path())
 
     # Load posted IDs
     posted_ids = load_posted_ids()
